@@ -1,32 +1,43 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime & Manga Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Anime & Manga</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Anime</a></li>
-                <li><a href="#">Manga</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
-    </header>
+/* Basic styling for the menu bar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
 
-    <main>
-        <!-- Your content goes here -->
-        <h2>Welcome to our anime and manga website!</h2>
-        <p>Explore the fascinating world of anime and manga.</p>
-    </main>
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
-    <footer>
-        © 2024 Anime & Manga Website
-    </footer>
-</body>
-</html>
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the main content area */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
