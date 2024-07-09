@@ -9,8 +9,8 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#">Manga</a>
+        <a href="#">Anime</a>
         <a href="#">Contact</a>
     </div>
 
