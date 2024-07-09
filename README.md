@@ -8,7 +8,7 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">Home</a>
+        <a href="https://elarctoons.ink/16/09/monster-pet-evolution-chapter-33/">Home</a>
         <a href="#">Manga</a>
         <a href="#">Anime</a>
         <a href="#">Contact</a>
