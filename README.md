@@ -21,10 +21,6 @@
         <p>Your content goes here...</p>
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
-
 /* Sidebar styles */
 .sidebar {
     height: 100%;
@@ -79,6 +75,10 @@
     padding: 20px;
 }
 
+    <script src="script.js"></script>
+</body>
+</html>
+
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -89,3 +89,4 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+
