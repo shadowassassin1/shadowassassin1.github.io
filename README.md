@@ -14,4 +14,13 @@
         <a href="#">Contact</a>
     </div>
 
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Menu</button>
+        <h2>Collapsible Menu Example</h2>
+        <p>Your content goes here...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
    
