@@ -4,73 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>My Website</title>
+    <title>My Collapsible Menu</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
 
-    <main>
-        <!-- Your page content goes here -->
-    </main>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Menu</button>
+        <h2>Collapsible Menu Example</h2>
+        <p>Your content goes here...</p>
+    </div>
 
-    <footer>
-        © 2024 My Website
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
-
-
-
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-/* Basic styling for the menu bar */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin-right: 1rem;
-}
-
-nav a {
+.sidebar a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-/* Style the main content area */
-main {
-    padding: 2rem;
-    text-align: center;
+.sidebar a:hover {
+    color: #f1f1f1;
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Button to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Push page content to the right when sidebar opens */
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
