@@ -19,4 +19,3 @@
         <h2>Collapsible Menu Example</h2>
         <p>Your content goes here...</p>
     </div>
-
